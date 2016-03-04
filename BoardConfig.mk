@@ -21,13 +21,13 @@
 #
 
 # inherit from zero-common
-include device/samsung/zero-common/BoardConfigCommon.mk
+include device/samsung/noblelte-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := zerofltexx,zeroflte
+TARGET_OTA_ASSERT_DEVICE := nobleltetmo,noblelte
 
 # Kernel
-TARGET_KERNEL_CONFIG := cm_zerofltexx_defconfig
+TARGET_KERNEL_CONFIG := cm_nobleltetmo_defconfig
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3879731200

@@ -15,9 +15,9 @@
 #
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/zerofltexx/zerofltexx-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/noblelte-common/noblelte-common-vendor.mk)
 
-LOCAL_PATH := device/samsung/zerofltexx
+LOCAL_PATH := device/samsung/nobleltetmo
 
 ## device overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -31,4 +31,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ril/sbin/cbd:root/sbin/cbd
 
 # Inherit from zero-common
-$(call inherit-product, device/samsung/zero-common/zero-common.mk)
+$(call inherit-product, device/samsung/noblelte-common/noblelte-common.mk)
